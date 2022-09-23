@@ -1,0 +1,123 @@
+ imoprt  java.util.*;
+ public class bills
+     {
+        public static void main(string[]args)
+                     {
+                      int menu_item,menu1,a_price=0,b=0;
+                      char ans;
+                      String i_name=" ";
+                     Scanner Sc=new Scanner(System.in);
+                           //using do while loop
+                      do
+                      {
+                      System.out.println("Menu \n1:Starters\n2:Main course\n3:Desserts");
+                      Menu_item=Sc.nextInt();
+                           //using switch case to get main choice
+                      Switch (menu_item)
+                        {
+                       case1:  
+                             System.out.println("1.Order your starter");
+                                      System.out.println("1:grill sandwich\t\t80");
+                                      System.out.println("2:veg roll\t\t100"); 
+                                      System.out.println("3:clear soup\t\t89");
+                          menu1=Sc.nextInt();
+                          System.out.println("Enter quantity");
+                                       b=Sc.nextInt();
+                                //using switch case to get sub choice
+                           switch(menu1)
+                          {
+                      case1:
+                                a_price+=80*b;
+                                i_name+="\ngrill sandwich";
+                                break;
+                       case2:
+                                a_price+=100*b;
+                                i_name+="\nveg roll";
+                                break;
+                        case3:
+                                a_price+=80*b;
+                                i_name+="\clear soup";
+                                break;
+                         break;
+                         default:
+                                 System.out.println("Invalid choice");
+                                 }
+                          break;
+                         case2:
+                                  System.out.println("2:Order your main course");
+                                            System.out.println("1:paneer tikka\t\t150");                  
+                                            System.out.println("2:veg kofta\t\t140");   
+                                            System.out.println("3:kadhai paneer\t\t180");   
+                                            System.out.println("4:mutton kheema\t\t250");   
+                         Menu1=Sc.nextInt();
+                                  System.out.println("Enter quantity");
+                                            b=sc.nextIny();
+                                        //using switch case ton get sub choice
+                                  switch(menu1)
+                                  {
+                         case1:
+                                    a_price+=150*b;
+                                    i_name+="\npanner tikka";
+                                    break;
+                         case2:
+                                    a_price+=140*b;
+                                    i_name+="\nveg kofta";
+                                    break;
+                          
+                          case3:
+                                    a_price+=180*b;
+                                    i_name+="\nkadhai chiken";
+                                    break;
+                         
+                          case4:
+                                    a_price+=250*b;
+                                    i_name+="\nmutton kheema";
+                                    break;
+                                    default:
+             
+                                   Sytem.out.println("Invalid choice");
+                                   }
+                                   break;
+                           case3:
+                                   System.out.println("3:order your Desert");
+                                            System.out.println("1:cheese cake\t\t50");
+                                            System.out.println("2:waffle\t\t60");        
+                                            System.out.println("3:packge blue donuts\t\t175");
+                           menu1=Sc.nextInt();
+                                   System.out.println(Enter quntity");
+                                          b=sc.nextInt();
+                                     //using switch case to get sub choice
+                                   switch(menu1)
+                                   {
+                           case1:
+                                      a_price=50*b;
+                                      i_name+="\ncheese cake";
+                                      break;
+                           case1:
+                                      a_price=50*b;
+                                      i_name+="\ncheese cake";
+                                      break;          
+                              case1:
+                                      a_price=50*b;
+                                      i_name+="\ncheese cake";
+                                      break;
+                                      default;
+                                               System.out.println();
+                                      }
+                                      break;
+                                      }
+                                System.out.println({"Do you want to  order dish yes/no");
+                                               ans=sc.next().charAt(0);
+                                        }
+                                        While(ans=='r'||ans=='y');
+                                        System.out.println("thanks for coming"); 
+                                        System.out.println("you have orderd:\n"+i_name); 
+                                        System.out.println("your total bill amount is:"a_price);
+                                 }
+                } 
+                                     
+                                      
+                                                          
+                      
+                              
+                                              
